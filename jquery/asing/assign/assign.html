@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assign.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>1</h1>
+      <br />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+        laboriosam ipsam fugit ab totam earum officia eos ullam ad fugiat
+        repudiandae ea molestiae, optio eaque tempore tempora autem beatae nulla
+        adipisci. Numquam ut deleniti odit, dolore voluptatem ullam facilis
+        tenetur nesciunt voluptates aliquam! Cum dolor et velit voluptatem.
+        Autem possimus error perspiciatis, fugit, eum molestiae perferendis
+        impedit facere voluptatem, blanditiis necessitatibus ab aspernatur illo
+        totam enim id dicta obcaecati eligendi minima ratione asperiores tempora
+        est laboriosam vitae? Voluptatum et deserunt labore debitis non,
+        perferendis aliquam magni quae officiis esse praesentium, quod pariatur
+        itaque, sapiente ducimus nulla id sint voluptate incidunt dolorem eos
+        animi quasi reiciendis! Quasi laboriosam expedita dolore eligendi iusto!
+      </p>
+      <br />
+
+      <h1>2</h1>
+      <br />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+        laboriosam ipsam fugit ab totam earum officia eos ullam ad fugiat
+        repudiandae ea molestiae, optio eaque tempore tempora autem beatae nulla
+        adipisci. Numquam ut deleniti odit, dolore voluptatem ullam facilis
+        tenetur nesciunt voluptates aliquam! Cum dolor et velit voluptatem.
+        Autem possimus error perspiciatis, fugit, eum molestiae perferendis
+        impedit facere voluptatem, blanditiis necessitatibus ab aspernatur illo
+        totam enim id dicta obcaecati eligendi minima ratione asperiores tempora
+        est laboriosam vitae? Voluptatum et deserunt labore debitis non,
+        perferendis aliquam magni quae officiis esse praesentium, quod pariatur
+        itaque, sapiente ducimus nulla id sint voluptate incidunt dolorem eos
+        animi quasi reiciendis! Quasi laboriosam expedita dolore eligendi iusto!
+      </p>
+      <br />
+
+      <h1>3</h1>
+      <br />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+        laboriosam ipsam fugit ab totam earum officia eos ullam ad fugiat
+        repudiandae ea molestiae, optio eaque tempore tempora autem beatae nulla
+        adipisci. Numquam ut deleniti odit, dolore voluptatem ullam facilis
+        tenetur nesciunt voluptates aliquam! Cum dolor et velit voluptatem.
+        Autem possimus error perspiciatis, fugit, eum molestiae perferendis
+        impedit facere voluptatem, blanditiis necessitatibus ab aspernatur illo
+        totam enim id dicta obcaecati eligendi minima ratione asperiores tempora
+        est laboriosam vitae? Voluptatum et deserunt labore debitis non,
+        perferendis aliquam magni quae officiis esse praesentium, quod pariatur
+        itaque, sapiente ducimus nulla id sint voluptate incidunt dolorem eos
+        animi quasi reiciendis! Quasi laboriosam expedita dolore eligendi iusto!
+      </p>
+      <br />
+      <center>
+  
+        <label for="text">Text</label>
+        <input class="1" type="text" /><br /><br /><br />
+
+      
+        <label  for="inout">Input</label>
+        <input class="2" type="text" /><br /><br /><br />
+  
+
+   
+        <label  for="output">Output</label>
+        <input class="3" type="text"/><br /><br /><br />
+    
+      </center>
+      <br/><br/>
+    </div><br><br>
+      <button class="button-1">ON</button>
+      <button class="button-2">OFF</button>
+      <button class="button-3">SUBMIT</button><br /><br />
+    
+
+    <script src="./code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <script>
+      // KERYPRESS
+        $(document).ready(function(){
+           $("body").keypress(function(){
+            $(this).css("background-color","green")
+           });
+        });
+
+        $(document).ready(function(){
+           $("body").keydown(function(){
+            $(this).css("background-color","gray")
+           });
+        });
+
+        $(document).ready(function(){
+           $("body").keyup(function(){
+            $(this).css("background-color","shadow green")
+           });
+        });
+      //   keypress end
+
+      // click
+
+      $(document).ready(function(){
+           $(".1").click(function(){
+            $(this).css("background-color","yellow")
+           });
+        });
+      
+
+        $(document).ready(function(){
+           $(".2").click(function(){
+            $(this).css("background-color","yellow")
+           });
+        });
+
+        $(document).ready(function(){
+           $(".3").click(function(){
+            $(this).css("background-color","yellow")
+           });
+        });
+
+      // mouce
+
+        $(document).ready(function(){
+           $("body").dblclick(function(){
+            $(this).css("background-color","gray")
+           });
+        });
+
+        $(document).ready(function(){
+           $("body").contextmenu(function(){
+            $(this).css("background-color","black")
+           });
+        });
+
+        $(document).ready(function(){
+           $("body").mouseover(function(){
+            $(this).css('font-size','21px')
+           });
+        });
+
+      // mouse
+
+      // hide
+      $(".button-1").click(function(){
+         $(".main").hide(2000);
+      }); 
+
+      // show
+      $(".button-2").click(function(){
+         $(".main").show(2000);
+      });
+
+      // toggle
+      $(".button-3").click(function(){
+         $(".main").toggle(2000);
+      });
+
+      // slide
+
+        // // up
+        // $('.up').click(function(){
+        //    $('body').slideUp();
+        // });
+
+        // // down
+        // $('.down').click(function(){
+        //    $('body').slideDown();
+        // });
+           
+
+    </script>
+  </body>
+</html>

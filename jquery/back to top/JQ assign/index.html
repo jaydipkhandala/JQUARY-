@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>  
+      <ul class="item">
+        <li class="menu-item">HOME</li>
+        <li class="menu-item">SIRVICE</li>
+        <li class="menu-item">HOT TOURS</li>
+        <li class="menu-item">POPULAR</li>
+        <li class="menu-item">GALLARY</li>
+        <li class="menu-item">HOTEL RIVIEWS</li>
+        <li class="menu-item">BLOG</li>
+      </ul>
+    </nav>
+    <header>
+      <div class="header-titel">
+        <h1>Travel. Live. Love</h1>
+      </div>
+      <div class="new-sub-head">
+        <p class="header-sub">
+          Everything you wish for and more. Great honeymoon vacation
+        </p>
+      </div>
+      <br /><br />
+
+      <button class="header-button">FROM $499.99/Person</button>
+    </header>
+    <section>
+      <div class="img">
+        <img class="img-1" src="./img/1661306782_49-kartinkin-net-p-kavkazskie-oboi-krasivo-60.jpg" alt="" />
+        <img class="img-1" src="./img/9bf0a532520b25c48fec94dfc0ccf5a6.jpg" alt="" />
+        <img class="img-1" src="./img/nebo-gory-ozero-derevya-les-4275.jpg" alt="" />
+  
+      </div>
+    </section>
+    <h1 class="intro-copy">
+
+    </h1>
+    
+    <div class="back-to-top">Back to Top</div>
+    
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+      var $backToTop = $(".back-to-top");
+$backToTop.hide();
+
+
+$(window).on('scroll', function() {
+  if ($(this).scrollTop() > 100) {
+    $backToTop.fadeIn();
+  } else {
+    $backToTop.fadeOut();
+  }
+});
+
+$backToTop.on('click', function(e) {
+  $("html, body").animate({scrollTop: 0}, 500);
+});
+    </script>
+  </body>
+</html>

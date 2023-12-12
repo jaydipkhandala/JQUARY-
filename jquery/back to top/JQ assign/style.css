@@ -1,0 +1,121 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/* header start */
+
+header {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* height: 50px; */
+    background-image: url(./img/header.jpg);
+    background-size: cover;
+    background-color: rgb(0 0 0 / 81%);
+    background-blend-mode: hue;
+    height: 700px;  
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  .item {
+    height: 50px;
+    color: #fcfcfc;
+    background-color: #0b0b0b;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: end;
+    gap: 50px;
+ 
+
+  }
+  
+  
+  .menu-item:hover {
+    color: #3db0b3;
+  }
+  
+  .header-titel {
+
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 15%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+  }
+  
+  .new-sub-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-sub {
+    color: rgb(203, 200, 200);
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
+  }
+  
+  .header-button {
+    height: 50px;
+    width: 200px;
+    background: transparent;
+    margin-left: 44%;
+    color: #3db0b3;
+    border: 2px SOLID wheat;
+  }
+  
+  .header-sub::after {
+    content: "";
+    display: block;
+    border-bottom: 14px solid #3db0b3;
+    width: 45px;
+    border-width: 4px;
+    height: 5px;
+    margin-left: 220px;
+    margin-top: 20px;
+  }
+.img-1{
+    height: 30%;
+    width: 100%;
+ } 
+ body {
+    height: 2000px;
+    position: relative;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .intro-copy {
+    padding: 1em;
+    margin: 3em auto;
+    max-width: 437px;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: lighter;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-block;  
+    padding: 1em;
+    margin: 1em;
+    background: #E8E8E8;
+    border: 2px solid #000;
+  }
+  .back-to-top:hover {
+    cursor: pointer;
+  }
+ 
